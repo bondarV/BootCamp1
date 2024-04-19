@@ -1,0 +1,23 @@
+﻿@model Name
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    </div>
+    <form asp-action="Output" class="row">
+        <label class="col-2" asp-for="FirstName"></label>
+        <div class="col-10">
+        <input asp-for="FirstName" class="w-50" required="required">
+        <button class="w-25 btn btn-outline-primary" type="submit">Submit</button>
+        </div>
+    </form>
